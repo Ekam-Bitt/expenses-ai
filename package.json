@@ -14,7 +14,8 @@
     "build-image": "./scripts/build-image.sh",
     "start-container": "docker compose --env-file container.env up",
     "test": "jest",
-    "generate-currency-data": "ts-node -T ./src/scripts/generateCurrencyData.ts"
+    "generate-currency-data": "ts-node -T ./src/scripts/generateCurrencyData.ts",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
@@ -101,6 +102,7 @@
     "tailwindcss": "^3",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.0"
   }
 }
